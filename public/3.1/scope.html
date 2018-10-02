@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Scope</title>
+    <style>
+        #global-scope {
+            background-color: silver;
+            height: 400px;
+            width: 400px;
+        }
+
+        #iif-scope {
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+            margin: 10px 25px;
+            /* display: none; */
+        }
+
+        #sum-scope {
+            background-color: blue;
+            height: 150px;
+            width: 150px;
+            color: white;
+            margin: 10px 25px;
+        }
+
+        #diff-scope {
+            background-color: purple;
+            height: 150px;
+            width: 150px;
+            color: white;
+            margin: 10px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Scope</h2>
+        <div id="global-scope">
+            global scope
+            
+            <div id="iif-scope">
+                IIF
+                <div id="sum-scope">
+                        sum scope
+                    </div>
+                    <div id="diff-scope">
+                            diff scope
+                        </div>  
+            </div>
+            
+        </div>
+    </div>
+    <script src="scope.js"></script>
+</body>
+</html>
